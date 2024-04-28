@@ -23,6 +23,8 @@ def select(li:list)->list[list]:
     Returns:
         list[list]: 幂集
     """
+    if not isinstance(li, list):
+        li = list(li)
     ress = []
     bis = binary(len(li))
     for bi in bis:
